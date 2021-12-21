@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/61c1d62142f550a8b6bb0a6d
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "SlimGuy Happy",
+    "subscribedToChannel": "Learning API"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/61c1cedc30d93929a104a5eb
+
+###
+
+PATCH http://localhost:3000/subscribers/61c1d62142f550a8b6bb0a6d
+Content-Type: application/json
+
+{
+    "name": "Nicholas Mariga"
+}
